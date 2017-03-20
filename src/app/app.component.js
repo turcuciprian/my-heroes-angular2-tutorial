@@ -9,16 +9,34 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var Hero = (function () {
+    function Hero() {
+    }
+    return Hero;
+}());
+exports.Hero = Hero;
+var HEROES = [
+    { id: 1, name: 'test name' },
+    { id: 2, name: 'another test name' },
+    { id: 3, name: 'yet another test name' },
+    { id: 4, name: 'the test name' },
+    { id: 5, name: 'test name one' },
+    { id: 6, name: 'test name 123' },
+    { id: 7, name: 'test name another!' },
+    { id: 8, name: 'test name yes!' },
+];
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Ciprian turcu\'s angular tutorial';
-        this.hero = 'I\'m the hero here!';
-        this.name = 'Angular';
+        this.hero = {
+            id: 1,
+            name: 'Cip'
+        };
+        this.heroes = HEROES;
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n  <h1>{{title}}</h1>\n  <h2>{{hero}}</h2>\n  ",
+            template: "\n\t<h1>My name is: {{hero.name}}</h1>\n\t<h2>{{hero.name}}'s ID is: {{hero.id}}</h2>\n\t<ul>\n\t\t<li *ngFor=\"let hero of heroes\">{{hero.name}}</li>\n\t</ul>    \n",
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

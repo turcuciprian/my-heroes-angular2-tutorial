@@ -12,7 +12,7 @@ var core_1 = require('@angular/core');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Ciprian turcu\'s angular tutorial';
-        this.hero = 'I\'m the hero here!';
+        this.hero = 'I\'m the hero here!test';
         this.name = 'Angular';
     }
     AppComponent = __decorate([

@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   title = 'Ciprian turcu\'s angular tutorial';
-  hero = 'I\'m the hero here!test';
+  hero = 'I\'m the hero here!';
   name = 'Angular';
 }

@@ -21,7 +21,7 @@ const HEROES: Hero[] = [
 	<h1>My name is: {{hero.name}}</h1>
 	<h2>{{hero.name}}'s ID is: {{hero.id}}</h2>
 	<ul>
-		<li *ngFor="let hero of heroes">{{hero.name}}</li>
+		<li (click)="clickEvent(hero)" *ngFor="let hero of heroes" [class.selected] = "hero === selectedHero">{{hero.name}}</li>
 	</ul>    
 `,
 })
@@ -29,6 +29,10 @@ export class AppComponent{
 	hero: Hero = {
 		id: 1,
 		name: 'Cip' 
+	};
+	selectedHero: Hero;
+	clickEvent(hero){
+		this.selectedHero = hero;
 	}
 	heroes = HEROES;
 }

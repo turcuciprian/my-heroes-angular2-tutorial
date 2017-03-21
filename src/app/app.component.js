@@ -21,10 +21,6 @@ var HEROES = [
 ];
 var AppComponent = (function () {
     function AppComponent() {
-        this.hero = {
-            id: 1,
-            name: 'Cip'
-        };
         this.heroes = HEROES;
     }
     AppComponent.prototype.clickEvent = function (hero) {
@@ -34,8 +30,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n\t<h1>My name is: {{hero.name}}</h1> <h2>{{hero.name}}'s ID is: {{hero.id}}</h2>\n\t<ul>\n\t\t<li (click)=\"clickEvent(hero)\" *ngFor=\"let hero of heroes\" [class.selected] = \"hero === selectedHero\">{{hero.name}}</li>\n\t</ul>\n",
-            styles: ["\n\t.selected{\n\t\tcolor:red;\n\t\tbackground:lightblue;\n\t}\n\tli{\n\t\tpadding:10px;\n\t\tbackground:#c3c3c3;\n\t\tdisplay:block;\n\t\tmax-width:300px;\n\t\tmargin:5px 0;\n\t}\n\tli:hover{\n\t\tcursor:pointer;\n\t\tbackground:red;\n\t\tcolor:#FFF;\n\t}\n"]
+            template: "\n\t<h1>Stuff</h1> <h2>subtitle</h2>\n\t<ul>\n\t\t<li (click)=\"clickEvent(hero)\" \n\t\t\t*ngFor=\"let hero of heroes\" \n\t\t\t[class.selected] = \"hero === selectedHero\">\n\t\t{{hero.name}}\n\t\t</li>\n\t</ul>\n\t<my-hero-detail [hero]=\"selectedHero\"></my-hero-detail>\n\t",
+            styles: ["\n\t\t.selected{\n\t\t\tcolor:red;\n\t\t\tbackground:lightblue;\n\t\t}\n\t\tli{\n\t\t\tpadding:10px;\n\t\t\tbackground:#c3c3c3;\n\t\t\tdisplay:block;\n\t\t\tmax-width:300px;\n\t\t\tmargin:5px 0;\n\t\t}\n\t\tli:hover{\n\t\t\tcursor:pointer;\n\t\t\tbackground:red;\n\t\t\tcolor:#FFF;\n\t\t}\n\t"]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);

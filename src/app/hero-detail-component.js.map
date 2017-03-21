@@ -1,1 +1,1 @@
-{"version":3,"file":"hero-detail-component.js","sourceRoot":"","sources":["hero-detail-component.ts"],"names":[],"mappings":";AAeE,CAAC;AACH;IAAA;IAEA,CAAC;IAAD,0BAAC;AAAD,CAAC,AAFD,IAEC;AAFY,2BAAmB,sBAE/B,CAAA"}
+{"version":3,"file":"hero-detail-component.js","sourceRoot":"","sources":["hero-detail-component.ts"],"names":[],"mappings":";;;;;;;;;;AACA,qBAAqB,QAAQ,CAAC,CAAA;AAc5B,CAAC;AACH;IAAA;IAGA,CAAC;IAFA;QAAC,KAAK,EAAE;;qDAAA;IAET,0BAAC;AAAD,CAAC,AAHD,IAGC;AAHY,2BAAmB,sBAG/B,CAAA"}
